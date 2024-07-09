@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-magenta: rgb(73, 20, 73);
+  --white: #fff;
+  --darkgray: darkgray;
+  --gray: gray;
+}
+
+body {
+  background-color: var(--dark-magenta);
+  text-align: center;
+  color: var(--white);
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin: 10px 0;
+}
+
+header p {
+  margin-bottom: 15px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+header .header-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header-img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  width: 100px;
+  margin: 10px;
+  padding: 3px;
+  color: #4e4747;
+  background-color: #fff;
+  background-image: linear-gradient(darkgray, gray);
+  border-color: var(--darkgray);
+  border-width: 3px;
+}
+
+.btn:hover {
+  background-image: linear-gradient(gray, darkgray);
+}
+
+.rules-container {
+  padding: 10px 0;
+  margin: auto;
+  border-radius: 10px;
+  border: 5px solid var(--darkgray);
+  background-color: var(--white);
+  color: #363131;
+}
+
+.rules-container ul {
+  list-style-type: none;
+}
+
+.rules-container p {
+  margin: 10px 0;
+}
+
+@media (min-width: 760px) {
+  .rules-container {
+    width: 60%;
+  }
+}
+
+.scoreContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 13px 0;
+  font-size: 1.2rem;
+}
+
+.score {
+  font-weight: 500;
+}
+
+.resultsContainer {
+  font-size: 1.3rem;
+  margin: 15px 0;
+}
+
+#winner-msg {
+  margin-top: 25px;
+}
+
+#resetGame-btn {
+  margin: 20px auto;
+  text-align: center;
+}
